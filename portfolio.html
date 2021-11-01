@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/portfolio.css">
   <link rel="stylesheet" href="css/responsivo.css">
+  <script>document.documentElement.classList.add("js")</script>
   <title>Bikcraft - Sobre</title>
 </head>
 
@@ -34,13 +35,23 @@
 
   <section class="introducao_interna interna_portfolio">
     <div class="container">
-      <h1>portfolio</h1>
-      <p>Conheça os projetos que amamos mostrar
+      <h1 data-anime="400" class="fadeInDown">portfolio</h1>
+      <p data-anime="800" class="fadeInDown"> Conheça os projetos que amamos mostrar
       </p>
     </div>
   </section>
 
-  <section class="container">
+  <section class="container fadeInDown" data-slide="quote" data-anime="1200">
+    <blockquote class="quote_clientes">
+      <p>
+        "No mundo atual, a continua expansão de nossa
+        atividade cumpre um papel essencial na formulação da
+        gestão inovadora da qual fazemos parte."
+      </p>
+
+      <cite> Guilherme </cite>
+    </blockquote>
+
     <blockquote class="quote_clientes">
       <p>
         "No mundo atual, a continua expansão de nossa
@@ -50,16 +61,34 @@
 
       <cite>Barbara Moss</cite>
     </blockquote>
+
+    <blockquote class="quote_clientes">
+      <p>
+        "No mundo atual, a continua expansão de nossa
+        atividade cumpre um papel essencial na formulação da
+        gestão inovadora da qual fazemos parte."
+      </p>
+
+      <cite>Xavier</cite>
+    </blockquote>
+
   </section>
 
-  <section class="portfolio">
-    <div class="container">
+  <section class="portfolio fadeInDown" data-anime="1600">
+    <div class="container" data-slide="portfolio">
 
       <ul class="portfolio_lista">
         <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicletas retro"></li>
         <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicletas passeio"></li>
         <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicletas esporte"></li>
       </ul>
+
+      <ul class="portfolio_lista">
+        <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicletas retro"></li>
+        <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicletas passeio"></li>
+        <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicletas esporte"></li>
+      </ul>
+
 
     </div>
   </section>
@@ -108,8 +137,12 @@
         <p class="grid-16">Bikcraft 2021 - Alguns direitos reservados.</p>
       </div>
 
+
     </div>
   </footer>
+  <script src="./js/simple-slide.js"></script>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

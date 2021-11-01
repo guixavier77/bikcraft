@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contato.css">
   <link rel="stylesheet" href="css/responsivo.css">
+  <script>document.documentElement.classList.add("js")</script>
   <title>Bikcraft - Sobre</title>
 </head>
 
@@ -34,13 +35,13 @@
 
   <section class="introducao_interna interna_contato">
     <div class="container">
-      <h1>Contato</h1>
-      <p>tire as suas dúvidas com a gente
+      <h1 data-anime="400" class="fadeInDown">Contato</h1>
+      <p data-anime="800" class="fadeInDown">tire as suas dúvidas com a gente
       </p>
     </div>
   </section>
 
-  <section class="contato">
+  <section class=" contato fadeInDown" data-anime="1200">
     <div class="container">
       <form id="form_contato" class="contato_form grid-8" action="">
         <label for="name">Nome</label>
@@ -117,6 +118,8 @@
 
     </div>
   </footer>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
