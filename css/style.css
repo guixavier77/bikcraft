@@ -414,7 +414,6 @@ img {
 
 .js [data-anime] {
   opacity: 0;
-  transform: translate3d(0, -20px, 0);
 }
 
 .js .fadeInDown {
@@ -425,4 +424,18 @@ img {
   opacity: 1;
   transform: none;
   transition: opacity 800ms, transform 800ms;
+}
+
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+#form-sucesso {
+  color: #31aa39;
+}
+
+#form-erro {
+  color: #f54540;
 }

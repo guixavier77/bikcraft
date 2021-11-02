@@ -2,9 +2,17 @@
 <html lang="pt-br">
 
 <head>
+  <title>Bikcraft - Sobre</title>
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bikcraft - Bicicletas Personalizadas" />
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte." />
+  <meta property="og:url" content="http://bikcraft.com" />
+  <meta property="og:image" content="http://bikcraft.com/img/og-image.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/grid.css">
@@ -12,7 +20,6 @@
   <link rel="stylesheet" href="css/contato.css">
   <link rel="stylesheet" href="css/responsivo.css">
   <script>document.documentElement.classList.add("js")</script>
-  <title>Bikcraft - Sobre</title>
 </head>
 
 <body>
@@ -43,17 +50,20 @@
 
   <section class=" contato fadeInDown" data-anime="1200">
     <div class="container">
-      <form id="form_contato" class="contato_form grid-8" action="">
+      <form id="form_contato" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
         <label for="name">Nome</label>
-        <input type="text" name="" id="nome">
+        <input type="text" name="nome" id="nome" required>
         <label for="email">Email</label>
-        <input type="text" name="" id="email">
+        <input type="email" name="email" id="email" required>
         <label for="telefone">Telefone</label>
-        <input type="text" name="" id="telefone">
-
+        <input type="text" name="telefone" id="telefone">
+        <label for="nao-aparece" class="nao-aparece">Se você não é um robô, deixe em branco</label>
+        <input type="text" class="nao-aparece" name="leaveblank">
+        <label for="nao-aparece" class="nao-aparece">Se você não é um robô, deixe em branco</label>
+        <input type="text" class="nao-aparece" name="dontchange" value="http://">
         <label for="mensagem">Mensagem</label>
-        <textarea id="espec"></textarea>
-        <button type="submit" class="btn btn-preto">Enviar</button>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <button type="submit" name="enviar" class="btn btn-preto">Enviar</button>
 
       </form>
 
@@ -119,6 +129,7 @@
     </div>
   </footer>
   <script src="./js/simple-anime.js"></script>
+  <script src="./js/simple-form.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
